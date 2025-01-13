@@ -3,7 +3,7 @@ name: Release Charts
 on:
   push:
     branches:
-      - fix/reduce-lease-delay
+      - main
 
 jobs:
   release:
