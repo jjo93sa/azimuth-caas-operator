@@ -2,28 +2,28 @@ apiVersion: v1
 entries:
   ara:
   - apiVersion: v2
-    appVersion: main
-    created: "2025-01-13T15:50:29.8992673Z"
+    appVersion: 0632beb
+    created: "2025-01-13T17:08:10.559500469Z"
     description: Helm chart for deploying ARA on Kubernetes
-    digest: 3e05bbcf06f60bcf53b0ca8c7c0abd644766d2cf152471d524858b5caca0f726
+    digest: 9bb275f317baeadbc52708e49cc68c6e03f5ba82d720dd9eff3460c476211695
     name: ara
     type: application
     urls:
-    - https://github.com/jjo93sa/azimuth-caas-operator/releases/download/ara-0.1.0/ara-0.1.0.tgz
-    version: 0.1.0
+    - ara-0.17.2-dev.tgz
+    version: 0.17.2-dev
   azimuth-caas-operator:
   - apiVersion: v2
-    appVersion: main
-    created: "2025-01-13T15:50:30.012509476Z"
+    appVersion: 0632beb
+    created: "2025-01-13T17:08:10.560625537Z"
     dependencies:
     - name: ara
       repository: file://../ara
       version: '>=0-0'
     description: Helm chart for deploying the Azimuth Cluster-as-a-Service operator.
-    digest: 62881e2e6a6864a12bc8077fad55818a3a85ecb06830e509a4053e049bbb268d
+    digest: 17da84d4949b717039d1fb7eb9934afaf3334e379a7bc3b392aaf2ef190b0ce4
     name: azimuth-caas-operator
     type: application
     urls:
-    - https://github.com/jjo93sa/azimuth-caas-operator/releases/download/azimuth-caas-operator-0.1.0/azimuth-caas-operator-0.1.0.tgz
-    version: 0.1.0
-generated: "2025-01-13T15:50:30.012519485Z"
+    - azimuth-caas-operator-0.17.2-dev.tgz
+    version: 0.17.2-dev
+generated: "2025-01-13T17:08:10.558374044Z"
