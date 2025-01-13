@@ -1,4 +1,5 @@
 # azimuth-caas-operator
+
 ![tox](https://github.com/azimuth-cloud/azimuth-caas-operator/actions/workflows/tox.yaml/badge.svg?branch=main)
 ![tox](https://github.com/azimuth-cloud/azimuth-caas-operator/actions/workflows/functional.yaml/badge.svg?branch=main)
 
@@ -72,14 +73,14 @@ functional test scripts.
 
 ## Config
 
-*This is a WIP, and not yet in the helm chart.*
+_This is a WIP, and not yet in the helm chart._
 
 You can set the following environment variables,
 if the default does not work for your setup:
 
-* `CONSUL_HTTP_ADDR=zenith-consul-server.zenith:8500`
-* `ARA_API_SERVER=http://azimuth-ara.azimuth-caas-operator:8000`
-* `ANSIBLE_RUNNER_IMAGE=ghcr.io/azimuth-cloud/azimuth-caas-operator-ee:v0.1.0`
+- `CONSUL_HTTP_ADDR=zenith-consul-server.zenith:8500`
+- `ARA_API_SERVER=http://azimuth-ara.azimuth-caas-operator:8000`
+- `ANSIBLE_RUNNER_IMAGE=ghcr.io/azimuth-cloud/azimuth-caas-operator-ee:v0.1.0`
 
 ## Run unit tests
 
@@ -129,3 +130,5 @@ You can test it with tox too:
     kubectl wait --for=jsonpath='{.status.phase}'=Ready cluster quick-test
     kubectl get jobs
     kubctl delete -f tools/test_quick.yaml
+
+#dummy commit
