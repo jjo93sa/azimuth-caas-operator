@@ -130,5 +130,3 @@ You can test it with tox too:
     kubectl wait --for=jsonpath='{.status.phase}'=Ready cluster quick-test
     kubectl get jobs
     kubctl delete -f tools/test_quick.yaml
-
-#dummy commit
