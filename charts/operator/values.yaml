@@ -3,11 +3,11 @@ config:
   # The URL for Consul, if using Consul
   consulUrl:
   # The URL for ARA
-  araUrl: "{{ printf \"http://%s-ara.%s:8000\" .Release.Name .Release.Namespace }}"
+  araUrl: '{{ printf "http://%s-ara.%s:8000" .Release.Name .Release.Namespace }}'
   # The image for ansible runner
   ansibleRunnerImage:
-    repository: ghcr.io/azimuth-cloud/azimuth-caas-operator-ee
-    tag: ""  # Defaults to appVersion
+    repository: ghcr.io/jjo93sa/azimuth-caas-operator-ee
+    tag: "" # Defaults to appVersion
   leaseCheckIntervalSeconds: 10
   # Any global extravars to use
   globalExtraVars: {}
@@ -17,9 +17,9 @@ trustBundle:
 
 # The operator image to use
 image:
-  repository: ghcr.io/azimuth-cloud/azimuth-caas-operator
+  repository: ghcr.io/jjo93sa/azimuth-caas-operator
   pullPolicy: IfNotPresent
-  tag: ""  # Defaults to appVersion
+  tag: "" # Defaults to appVersion
 
 imagePullSecrets: []
 
